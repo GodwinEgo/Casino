@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        setTimeout(function() {
+            $(".loader_bg").fadeOut();
+        }, 1500);
+    </script>
+</head>
+
+<body>
+    <!--Loader-->
+    <div class="">
+        <div class="loader">
+            <img src="img/loading." alt="">
+        </div>
+    </div>
+    <span id="button"></span>
+    <!--Main Layout-->
+    <div class="main-layout">
+        <header>
+            <img src="img/logo.png" class="logo" alt="">
+            <div class="login">
+                <button>Log In</button>
+            </div>
+            <img src="img/menu_icon.png" alt="" id="menu-icon" onclick="Show()">
+        </header>
+        <nav id="nav-list">
+            <img src="icon/close.png" alt="" onclick="Hide()">
+            <ul>
+                <li><a href="index.html" onclick="active()">Home</a></li>
+                <li><a href="#licensing">About</a></li>
+                <li><a href="#casino-games">Game</a></li>
+                <li><a href="#customer">Our Customer</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <button class="play-button">Play Now</button>
+    <!--Casino Games-->
+    <div id="casino-games">
+        <h1>Our Casino Games</h1>
+        <hr>
+        <div class="figures">
+            <div class="figures1">
+                <figure>
+                    <img src="img/game1.jpg" alt="">
+                    <figcaption>Game 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/game2.jpg" alt="">
+                    <figcaption>Game 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/game3.jpg" alt="">
+                    <figcaption>Game 3</figcaption>
+                </figure>
+            </div>
+            <div class="figures2">
+                <figure>
+                    <img src="img/game4.jpg" alt="">
+                    <figcaption>Game 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/game5.jpg" alt="">
+                    <figcaption>Game 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/game6.jpg" alt="">
+                    <figcaption>Game 6</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!--Licensing-->
+    <div id="licensing">
+        <h1>Licensing & Regulation</h1>
+        <hr>
+        <article id="card">
+            <div class="article-text">
+                <h2>Promotions</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <button class="play-online">PLAY ONLINE</button>
+            </div>
+            <img src="img/jons_img1.png" alt="">
+        </article>
+        <p class="lorem">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of
+            Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <div class="about">
+            <p>About Spin</p>
+            <p>Our Promotions</p>
+            <p>Our Mobile App</p>
+            <p>Over 1000 Games</p>
+        </div>
+        <div class="card2">
+            <img src="img/imag.jpg" alt="">
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variati ons of passages
+                of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+        <div id="customer">
+            <h1>What Says Our Customer</h1>
+            <hr>
+            <article class="customer-card">
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variati ons of passages
+                    of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            </article>
+            <figure class="customer-img">
+                <img src="img/Customer.png" alt="">
+                <p class="customer-caption">Godwin Ego</p>
+            </figure>
+        </div>
+        <div class="call-back">
+            <h1>Request A Call Back</h1>
+            <hr>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Name" required>
+                <input type="tel" name="" id="" placeholder="Phone Number" required>
+                <input type="email" name="" id="" placeholder="Email" required>
+                <input type="text" name="" id="" placeholder="Message" required>
+                <button class="send-button">Send</button>
+            </form>
+        </div>
+        <div class="sub-footer">
+            <div class="subscribe">
+                <p>Subscribe Now</p>
+                <input type="email" name="" id="" placeholder="Email">
+                <button class="submit-button">Submit</button>
+            </div>
+            <div class="links">
+                <p>Links</p>
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Game</a>
+                    <a href="">Our Customer</a>
+                    <a href="">contact</a>
+
+                </nav>
+            </div>
+            <div class="conatct">
+                <p>Contact</p>
+                <span>godwinego@gmail.com</span>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p class="para">@Copyright 2022 All Rights Reserved By Godwin_Ego</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
